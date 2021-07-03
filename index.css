@@ -1,0 +1,262 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font: normal 16px sans-serif;
+	color: #d60606;
+}
+
+header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 35px 100px 0;
+}
+
+header h2 {
+	font: Helvetica, sans-serif;
+}
+
+header nav {
+	display: flex;
+}
+
+header nav li {
+	margin: 0 15px;
+	font-size: 20px;
+}
+
+header nav li:first-child{
+	margin-left: 0;	
+}
+
+header nav li:last-child{
+	margin-right: 0;	
+}
+
+ul, nav {
+	list-style: none;
+}
+
+h2 a {
+	color: #0c0369;
+	font-size: 35px;
+	font-family: Gabriola, sans-serif;
+}
+
+nav li a {
+	font-size: 22px;
+	font-weight: bold;
+	color: #0c0369;
+	font-family: Gotham Pro, sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+a.button {
+	color: #FF8C00;
+	border-radius: 10px;
+	background-color: #8B0000;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: 800;
+}
+
+hr {
+	width: 150px;
+	height: 2px;
+	background-color: #026a78;
+	border: 0;
+	margin-bottom: 80px;
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 125px 100px;
+}
+
+section h3.tit {
+	font: bold 32px "Open Sans", sans-serif;
+	text-align: center;
+	margin-bottom: 35px;
+}
+
+section p {
+	max-width: 800px;
+	text-align: center;
+	margin-bottom: 35px;
+	padding: 0 20px;
+	line-height: 2;
+	font-size: 18px;
+}
+
+ul.imagesOpisanie {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.first {
+	position: relative;
+	justify-content: center;
+	min-height: 100vh;
+	text-align: center;
+	color: #8B0000;
+}
+
+.first .myBackground {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #2196F3;
+	z-index: -1;
+}
+
+.first .myBackground:after{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: ;
+	opacity: 0.75;
+}
+
+.myBackground {
+	background: url(images/ground.jpg);
+	width: 100%;
+	height: 100%;
+}
+
+.first h1{
+	font: bold 60px "Open Sans", sans-serif;
+	margin-bottom: 15px;
+}
+
+.first h3{
+	font: normal 28px "Open Sans", sans-serif;
+	margin-bottom: 40px;
+}
+
+.first a.button {
+	padding: 20px 46px;
+}
+
+.examples {
+	background-color: #FFEBCD;
+}
+
+.examples h3.tit, .procedure h3.tit, .contact h3.tit {
+	color: #c70606;
+	font-size: 30px;
+	font-family: New Century Schoolbook, TeX Gyre Schola, serif;
+}
+
+.examples p, .procedure p, .contact p {
+	font-family: New Century Schoolbook, TeX Gyre Schola, serif;
+	font-size: 21px;
+	line-height: 1.7;
+}
+
+.examples .imagesOpisanie li {
+	padding: 5px;
+	height: 350px;
+	border-radius: 5px;
+	background-clip: content-box;
+	background-size: cover;
+	background-position: center;
+}
+
+.examples .imagesOpisanie li.small {
+	flex-basis: 40%;
+}
+
+.examples .imagesOpisanie li.large {
+	flex-basis: 60%;
+}
+
+.procedure {
+	background-color: #fff6d1;
+}
+
+.procedure .imagesOpisanie li {
+	padding: 0 30px;
+	flex-basis: 33%;
+	text-align: center;
+}
+
+.procedure .imagesOpisanie li i {
+	font-size: 50px;
+	margin-bottom: 25px;
+}
+
+.procedure .imagesOpisanie li h4 {
+	font-size: 30px;
+	margin-bottom: 25px;
+}
+
+.procedure .imagesOpisanie li p {
+	margin: 0;
+	font-size: 20px;
+}
+
+.contact {
+	background-color: #fff9e3;
+}
+
+.contact form {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	max-width: 800px;
+	width: 80%;
+}
+
+.contact form input {
+	padding: 15px;
+	flex: 1;
+	margin-right: 30px;
+	font-size: 18px;
+}
+
+.contact form .button {
+	padding: 18px 42px;
+}
+
+.icon a {
+	color: #E0FFFF;
+	font-size: 30px;
+}
+
+footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 60px 0;
+	background: url(images/footer.jpg);
+	height: 250px;
+}
+
+footer p {
+	font-size: 20px;
+	color: #E0FFFF;
+	margin: 10px;
+}
