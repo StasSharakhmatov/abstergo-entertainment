@@ -261,6 +261,14 @@ footer p {
 	margin: 10px;
 }
 
+@media (max-width: 1024px) {
+
+	header h2 a {
+		font-size: 30px;
+	}
+
+}
+
 @media (max-width: 1000px) {
 
 	section {
@@ -287,6 +295,10 @@ footer p {
 }
 
 @media (max-width: 800px) {
+
+	header h2 a {
+		line-height: 2px;
+	}
 
 	.concept {
 		min-height: 600px;
@@ -335,6 +347,26 @@ footer p {
 
 	.procedure .epochs li {
 		flex-basis: 100%;
+	}
+
+}
+
+@media (max-width: 500px) {
+
+	header nav li a {
+		font-size: 16px;
+	}
+
+}
+
+@media (max-width: 400px) {
+
+	header h2 a {
+		font-size: 21px;
+	}
+
+	header nav li a {
+		font-size: 11px;
 	}
 
 }
