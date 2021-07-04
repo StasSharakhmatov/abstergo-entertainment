@@ -87,7 +87,7 @@ section {
 	padding: 125px 100px;
 }
 
-section h3.tit {
+section h3.title {
 	font: bold 32px "Open Sans", sans-serif;
 	text-align: center;
 	margin-bottom: 35px;
@@ -102,14 +102,14 @@ section p {
 	font-size: 18px;
 }
 
-ul.imagesOpisanie {
+ul.epochs {
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 }
 
-.first {
+.concept {
 	position: relative;
 	justify-content: center;
 	min-height: 100vh;
@@ -117,7 +117,7 @@ ul.imagesOpisanie {
 	color: #8B0000;
 }
 
-.first .myBackground {
+.concept .background {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -127,7 +127,7 @@ ul.imagesOpisanie {
 	z-index: -1;
 }
 
-.first .myBackground:after{
+.concept .background:after{
 	content: "";
 	position: absolute;
 	top: 0;
@@ -138,23 +138,23 @@ ul.imagesOpisanie {
 	opacity: 0.75;
 }
 
-.myBackground {
+.background {
 	background: url(images/ground.jpg);
 	width: 100%;
 	height: 100%;
 }
 
-.first h1{
+.concept h1{
 	font: bold 60px "Open Sans", sans-serif;
 	margin-bottom: 15px;
 }
 
-.first h3{
+.concept h3{
 	font: normal 28px "Open Sans", sans-serif;
 	margin-bottom: 40px;
 }
 
-.first a.button {
+.concept a.button {
 	padding: 20px 46px;
 }
 
@@ -162,19 +162,19 @@ ul.imagesOpisanie {
 	background-color: #FFEBCD;
 }
 
-.examples h3.tit, .procedure h3.tit, .contact h3.tit {
+.examples h3.title, .procedure h3.title, .contacts h3.title {
 	color: #c70606;
 	font-size: 30px;
 	font-family: New Century Schoolbook, TeX Gyre Schola, serif;
 }
 
-.examples p, .procedure p, .contact p {
+.examples p, .procedure p, .contacts p {
 	font-family: New Century Schoolbook, TeX Gyre Schola, serif;
 	font-size: 21px;
 	line-height: 1.7;
 }
 
-.examples .imagesOpisanie li {
+.examples .epochs li {
 	padding: 5px;
 	height: 350px;
 	border-radius: 5px;
@@ -183,11 +183,11 @@ ul.imagesOpisanie {
 	background-position: center;
 }
 
-.examples .imagesOpisanie li.small {
+.examples .epochs li.small {
 	flex-basis: 40%;
 }
 
-.examples .imagesOpisanie li.large {
+.examples .epochs li.large {
 	flex-basis: 60%;
 }
 
@@ -195,32 +195,32 @@ ul.imagesOpisanie {
 	background-color: #fff6d1;
 }
 
-.procedure .imagesOpisanie li {
+.procedure .epochs li {
 	padding: 0 30px;
 	flex-basis: 33%;
 	text-align: center;
 }
 
-.procedure .imagesOpisanie li i {
+.procedure .epochs li i {
 	font-size: 50px;
 	margin-bottom: 25px;
 }
 
-.procedure .imagesOpisanie li h4 {
+.procedure .epochs li h4 {
 	font-size: 30px;
 	margin-bottom: 25px;
 }
 
-.procedure .imagesOpisanie li p {
+.procedure .epochs li p {
 	margin: 0;
 	font-size: 20px;
 }
 
-.contact {
+.contacts {
 	background-color: #fff9e3;
 }
 
-.contact form {
+.contacts form {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -229,14 +229,14 @@ ul.imagesOpisanie {
 	width: 80%;
 }
 
-.contact form input {
+.contacts form input {
 	padding: 15px;
 	flex: 1;
 	margin-right: 30px;
 	font-size: 18px;
 }
 
-.contact form .button {
+.contacts form .button {
 	padding: 18px 42px;
 }
 
@@ -259,4 +259,82 @@ footer p {
 	font-size: 20px;
 	color: #E0FFFF;
 	margin: 10px;
+}
+
+@media (max-width: 1000px) {
+
+	section {
+		padding: 100px 50px;
+	}
+
+	header {
+		padding: 20px 50px;
+	}
+
+	.examples .epochs li.small, .examples .epochs li.large {
+		flex-basis: 100%;
+	}
+
+	.procedure .epochs li {
+		flex-basis: 70%;
+		margin-bottom: 65px;
+	}
+
+	.procedure .epochs li:last-child{
+		margin-bottom: 0;
+	}
+
+}
+
+@media (max-width: 800px) {
+
+	.concept {
+		min-height: 600px;
+	}
+
+	.concept h1 {
+		font-size: 48px;
+	}
+
+	.concept h3 {
+		font-size: 24px;
+	}
+
+	.concept a.button {
+		padding: 15px 40px;
+	}
+
+	.contacts form input {
+		flex-basis: 100%;
+		margin: 0 0 20px 0;
+	}
+
+}
+
+@media (max-width: 700px) {
+
+	header {
+		flex-direction: column;
+	}
+
+	header h2 {
+		margin-bottom: 15px;
+	}
+
+	footer {
+		padding: 80px 15px;
+	}
+
+}
+
+@media (max-width: 600px) {
+
+	section {
+		padding: 80px 30px;
+	}
+
+	.procedure .epochs li {
+		flex-basis: 100%;
+	}
+
 }
